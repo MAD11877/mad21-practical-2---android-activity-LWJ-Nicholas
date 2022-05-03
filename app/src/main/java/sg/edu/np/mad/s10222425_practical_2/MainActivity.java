@@ -9,20 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public class User {
-        String name;
-        String description;
-        int id;
-        boolean followed;
-
-        public User(String n, String desc, int num){
-            name = n;
-            description = desc;
-            id = num;
-            followed = false;
-        }
-    }
-
     //Creating a new user object
     User student1 = new User("Nicholas Lee",
             "Second year IT student at Ngee Ann Polytechnic, loves to play chess and talk to plants during his free time.",
@@ -66,5 +52,19 @@ public class MainActivity extends AppCompatActivity {
 
         //Update follow status accordingly
         student1.followed = !student1.followed;
+    }
+
+    public static class User {
+        String name;
+        String description;
+        int id;
+        boolean followed;
+
+        public User(String n, String desc, int num){
+            name = n;
+            description = desc;
+            id = num;
+            followed = false;
+        }
     }
 }
