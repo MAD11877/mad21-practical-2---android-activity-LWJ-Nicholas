@@ -6,11 +6,10 @@ public class User {
     int id;
     boolean followed;
 
-    public User(){}
-    public User(String n, String desc, int num){
+    public User(String n, String desc, int num, boolean follow){
         name = n;
         description = desc;
         id = num;
-        followed = false;
+        followed = follow;
     }
 }

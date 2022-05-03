@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
     //Creating a new user object
     User student1 = new User("Nicholas Lee",
             "Second year IT student at Ngee Ann Polytechnic, loves to play chess and talk to plants during his free time.",
-            10222425);
+            10222425,
+            false);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
