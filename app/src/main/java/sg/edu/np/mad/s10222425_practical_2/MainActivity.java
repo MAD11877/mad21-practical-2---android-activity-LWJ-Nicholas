@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Check if user is being followed
         //Display unfollow/follow
-        Button followBtn = (Button)findViewById(R.id.followBtn);
+        Button followBtn = findViewById(R.id.followBtn);
         if (student1.followed){
             followBtn.setText(R.string.unfollow);
         } else {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Check if user is being followed
         //Display follow/unfollow
-        Button followBtn = (Button)findViewById(R.id.followBtn);
+        Button followBtn = findViewById(R.id.followBtn);
         if (student1.followed){
             followBtn.setText(R.string.follow);
         } else {
@@ -52,19 +52,5 @@ public class MainActivity extends AppCompatActivity {
 
         //Update follow status accordingly
         student1.followed = !student1.followed;
-    }
-
-    public static class User {
-        String name;
-        String description;
-        int id;
-        boolean followed;
-
-        public User(String n, String desc, int num){
-            name = n;
-            description = desc;
-            id = num;
-            followed = false;
-        }
     }
 }
